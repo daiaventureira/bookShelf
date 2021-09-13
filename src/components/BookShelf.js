@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import * as BooksAPI from "./BooksAPI";
+// import * as BooksAPI from "../BooksAPI";
 import { Link } from "react-router-dom";
 
 class BookShelf extends Component {
@@ -156,7 +156,6 @@ class BookShelf extends Component {
         }
       }
     }
-    console.log(this.props.data);
 
     return (
       <div className="list-books">

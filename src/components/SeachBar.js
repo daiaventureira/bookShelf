@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import * as BooksAPI from "./BooksAPI";
-import "./App.css";
+import * as BooksAPI from "../BooksAPI";
+import "../App";
 
 class SearchBar extends Component {
   constructor(props) {
@@ -18,7 +18,6 @@ class SearchBar extends Component {
     BooksAPI.update(book, shelf).then(() => {
       this.props.updateBook(book);
     });
-    console.log(book.id);
   }
 
   searchAPI(query) {
@@ -100,8 +99,8 @@ class SearchBar extends Component {
               ))}
             </ol>
           ) : (
-            <div className="message">
-              <h3>No match found !!</h3>
+            <div>
+              <h3>No books found</h3>
             </div>
           )}
         </div>

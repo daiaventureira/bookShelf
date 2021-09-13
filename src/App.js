@@ -1,10 +1,10 @@
 import React from "react";
 import * as BooksAPI from "./BooksAPI";
 import "./App.css";
-import BookShelf from "./BookShelf";
+import BookShelf from "./components/BookShelf";
 import { Route } from "react-router-dom";
-import BookSearch from "./BookSearch";
-import SearchBar from "./SeachBar";
+import BookSearch from "./components/BookSearch";
+import SearchBar from "./components/SeachBar";
 
 class BooksApp extends React.Component {
   constructor() {
@@ -14,12 +14,8 @@ class BooksApp extends React.Component {
     this.updateBook = this.updateBook.bind(this);
 
     this.state = {
-      current: [],
-      want: [],
-      read: [],
       data: [],
       screen: "book",
-      showSearchPage: false,
     };
   }
   componentDidMount() {
@@ -49,8 +45,6 @@ class BooksApp extends React.Component {
     });
 
     BooksAPI.update(this.state.data[index], this.state.data[index].shelf);
-
-    console.log(this.state.data);
   }
 
   render() {
@@ -77,11 +71,7 @@ class BooksApp extends React.Component {
           path="/search"
           render={() => (
             <div className="app">
-              <SearchBar
-                data={this.state.data}
-                updateBook={this.updateBook}
-                search={this.search}
-              />
+              <SearchBar data={this.state.data} updateBook={this.updateBook} />
               <BookSearch />
             </div>
           )}
