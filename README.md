@@ -1,6 +1,6 @@
 # BookShelf
 
-This application is an bookshelf built using ReactJs.
+This application is a bookshelf built using ReactJs.
 
 The BookShelf application has a main page with three shelves (currently reading, want to read and read) where the user can organize them books in differents shelves. The BookShelf has a search page as well where the user cans seach for books by name or author. When the user select in what shelf the book should be on the main page, automatically the book will be inserted in that shelf.
 
