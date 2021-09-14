@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import * as BooksAPI from "../BooksAPI";
 import { Link } from "react-router-dom";
 
 class BookShelf extends Component {
@@ -51,7 +50,7 @@ class BookShelf extends Component {
                   </div>
                   <div className="book-title">{this.props.data[i].title}</div>
                   <div className="book-authors">
-                    {this.props.data[i].authors[0]}
+                    {this.props.data[i].authors.join(", ")}
                   </div>
                 </div>
               </li>
@@ -147,7 +146,7 @@ class BookShelf extends Component {
                   </div>
                   <div className="book-title">{this.props.data[i].title}</div>
                   <div className="book-authors">
-                    {this.props.data[i].authors[0]}
+                    {this.props.data[i].authors.join(", ")}
                   </div>
                 </div>
               </li>
