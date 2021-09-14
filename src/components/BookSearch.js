@@ -12,13 +12,6 @@ class BookSearch extends Component {
       data: [],
     };
   }
-  // componentDidMount() {
-  //   BooksAPI.getAll().then((data) => {
-  //     this.setState(() => ({
-  //       data,
-  //     }));
-  //   });
-  // }
 
   render() {
     return (

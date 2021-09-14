@@ -99,7 +99,7 @@ class BookShelf extends Component {
                   </div>
                   <div className="book-title">{this.props.data[i].title}</div>
                   <div className="book-authors">
-                    {this.props.data[i].authors[0]}
+                    {this.props.data[i].authors.join(", ")}
                   </div>
                 </div>
               </li>
