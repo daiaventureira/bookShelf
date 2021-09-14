@@ -11,7 +11,7 @@ The BookShelf application has a main page with three shelves (currently reading,
 ```bash 
  $ git clone git@github.com:daiaventureira/bookShelf.git
 ```
-* Next step is to run the following commnands in your terminal inside the file bookShelf: 
+* Next step is to run the followings commands in your terminal inside the file bookShelf: 
 
 ```bash
  $ npm install 
